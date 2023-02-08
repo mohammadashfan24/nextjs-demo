@@ -1,0 +1,98 @@
+.card{
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    .topContent{
+        display: flex;
+        border-top-left-radius: 50px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: inherit;
+        }
+    }
+    .bottomContent{
+        position: relative;
+        width: 100%;
+        background-color: #270F33;
+        padding: 20px 20px 30px 20px;
+        width: 333px;
+        color: #ffffff;
+        border-bottom-right-radius: 50px;
+        .title{
+            font-weight: 500;
+            font-size: 1.375rem;
+            line-height: 22.78px;
+        }
+        .subTitle{
+            padding: 10px 0;
+            font-size: 0.875rem;
+        }
+        .description{
+            padding-bottom: 10px; 
+            font-size: 0.875rem;
+        }
+        .showDate{
+            font-size: 0.75rem;
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            .ticketWrapper{
+                padding-right: 17px;
+                display: flex;
+                font-size: 0.75rem;
+                img{
+                    padding-right: 5px;
+                }
+                .ticket{
+                    font-size: 0.75rem;
+                    padding-right: 5px;
+                }
+                .amount{
+    
+                }
+            }
+            .timeWrapper{
+                display: flex;
+                align-items: center;
+                img{
+                    padding-right: 5px;
+                }
+                .showDate{
+    
+                }
+            }
+        }
+        .container{
+            padding: 8px 0;
+        }
+        .bookBtn{
+            all: unset;
+            position: absolute;
+            right: 26px;
+            bottom: 16px;
+            background-color: #FBD07A;
+            padding: 8px 14px;
+            border-radius: 6.75px;
+            color: #000;
+            font-size: 0.75rem;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .card{
+        .bottomContent{
+            width: 100%;
+        }
+    }
+}

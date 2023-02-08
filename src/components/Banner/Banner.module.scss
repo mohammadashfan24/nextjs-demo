@@ -1,0 +1,66 @@
+.banner{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .bluredImage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
+        font-weight: 400;
+        h2, h3, h4, p{
+            color: #ffffff;
+            padding: 6px 0;
+            text-align: center;
+            width: 100%;
+        }
+        h2{
+            font-size: 3.125rem;
+            white-space: nowrap;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        h4{
+            font-size: 2.188rem;
+        }
+        p{
+            font-size: 1.875rem;
+        }
+    }
+    .btn{
+        all: unset;
+        border: 1px solid #ffffff;
+        padding: 6px;
+        font-size: 1.25rem;
+        color: #FEA901;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .banner{
+        padding: 0;
+        .bluredImage{
+            h2, h3, h4{
+                font-size: 0.75rem;
+            }
+            p{
+                font-size: 0.75rem;
+            }
+        }
+        .btn{
+            font-size: 0.75rem;
+        }
+    }
+}

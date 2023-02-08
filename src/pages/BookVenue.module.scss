@@ -1,0 +1,144 @@
+.BookVenueWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 200px;
+  .title {
+    font-weight: 400;
+    line-height: 64.38px;
+    text-align: center;
+    padding: 19px 0 42px 0;
+    font-size: 3.125rem;
+  }
+  .bookVenue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bookVenueOne {
+      position: relative;
+      left: 85px;
+      padding: 22px;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fbd07a;
+        z-index: -1;
+        border-radius: 139.555px 0px 0px 0px;
+      }
+    }
+    .bookVenueTwo {
+      padding: 22px;
+      width: 100%;
+      position: relative;
+      top: 120px;
+      right: 85px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fbd07a;
+        z-index: -1;
+        border-radius: 0px 0px 159px 0px;
+      }
+    }
+  }
+  .collection {
+    width: 100%;
+    // height: 382.18px;
+    background-color: #270f33;
+    margin-top: 235px;
+    position: relative;
+    display: flex;
+    padding: 60px 84px;
+    .verticleGrid {
+      position: absolute;
+      top: -95px;
+      left: 84px;
+      // width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // grid-template-rows: auto;
+      grid-gap: 20px;
+      row-gap: 20px;
+      column-gap: 20px;
+      :last-child {
+        grid-column: 1 / span 2;
+      }
+    }
+    .info {
+      background-color: #fbd07a;
+      padding: 59px 24px;
+      p {
+        padding-bottom: 31px;
+        line-height: 21.09px;
+        text-align: center;
+        font-size: 1.125rem;
+        width: 474px;
+      }
+    }
+  }
+  .messImageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 148px;
+    width: 90%;
+    img {
+      width: 100%;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .BookVenueWrapper {
+    .title {
+      font-size: 0.75rem;
+      padding: 18px 0;
+    }
+    .bookVenue {
+      .bookVenueOne {
+        padding: 5px;
+        left: 10px;
+        &::before {
+          border-radius: 42.3134px 0px 0px 0px;
+        }
+      }
+      .bookVenueTwo {
+        padding: 5px;
+        right: 10px;
+        top: 56px;
+        &::before {
+          border-radius: 0px 0px 47.881px 0px;
+        }
+      }
+    }
+    .collection {
+      display: unset;
+      padding: 25px 41px;
+      margin-top: 222px;
+      width: 90%;
+      .info {
+        p {
+          width: unset;
+        }
+      }
+      .verticleGrid {
+        top: -243px;
+      }
+    }
+  }
+}

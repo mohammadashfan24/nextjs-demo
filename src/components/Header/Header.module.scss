@@ -1,0 +1,113 @@
+.header{
+    background-color: #270F33;
+    display: flex;
+    align-items: center;
+    padding: 13px 84px;
+    .leftContent{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            background-image: 'url(18 candleriggs 1 no background)';
+        }
+        .inputWrapper{
+            padding: 10px 27px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 26px;
+            .textInput{
+                border: none;
+                outline: none;
+                width: 244px;
+                font-size: 0.75rem;
+                color: #9E9D9D;
+            }
+            .searchBtn{
+                background: none;
+                border: none;
+                outline: none;
+                display: flex;
+                cursor: pointer;
+                padding-left: 27px;
+            }
+        }
+    }
+    .rightContent{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .navItems{
+            margin: 0 11px;
+            padding: 6px 18px;
+            background-color: #FBD07A;
+            color: #000;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+        .searchBtnForMobile{
+            display: none;
+        }
+    }
+    .hamberger{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        .leftContent{
+            width: 70%;
+        }
+        .rightContent{
+            width: 30%;
+            .navItems{
+                display: none;
+            }
+            .hamberger{
+                display: block;
+                position: relative;
+                .modal{
+                    position: absolute;
+                    top: 26px;
+                    right: 0;
+                    .mobileNavItems{
+                        display: block;
+                        margin: 0;
+                        padding: 19px 17px;
+                        background-color: #FBD07A;
+                        color: #000;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 0 24px;
+        .leftContent{
+            .inputWrapper{
+               display: none;
+            }
+        }
+        .rightContent{
+            .searchBtnForMobile{
+                display: block;
+                all: unset;
+                cursor: pointer;
+                padding-right: 22px;
+            }
+            
+        }
+      
+    }
+}
+
+
+
