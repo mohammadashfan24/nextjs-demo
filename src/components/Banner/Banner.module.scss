@@ -51,6 +51,7 @@
 @media only screen and (max-width:768px) {
     .banner{
         padding: 0;
+        z-index: -1;
         .bluredImage{
             h2, h3, h4{
                 font-size: 0.75rem;
